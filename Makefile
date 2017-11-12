@@ -6,7 +6,7 @@ FLAGS = -Wall -Wextra -Werror
 
 NAME = ft_gkrellm
 
-SRC = CpuModule.cpp Display.cpp HostModule.cpp IMonitorModule.cpp IMonitorDisplay.cpp Module.cpp OsModule.cpp RawModule.cpp TimeModule.cpp main.cpp
+SRC = CpuModule.cpp Display.cpp HostModule.cpp IMonitorModule.cpp IMonitorDisplay.cpp Module.cpp OsModule.cpp RawModule.cpp TimeModule.cpp main.cpp Graphical.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
@@ -17,11 +17,11 @@ NCURSES = -lncurses
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@$(CC) $(FLAGS) $(INC) $(LIB) $(OBJ) $(NCURSES) -o $(NAME)
+	@$(CC) $(FLAGS) $(INC) $(LIB) $(OBJ) $(NCURSES) -o $(NAME) -L ~/.brew/lib -lsfml-system -lsfml-window -lsfml-graphics -lsfml-network -lsfml-audio -rpath ~/.brew/lib
 	@echo  "\033[32mCompiled and created" $(NAME) "binary\033[0m"
 
 %.o: %.cpp
-	@$(CC) $(INC) $(FAST) $(FLAGS) -c -o $@ $<
+	@$(CC) $(INC) $(FAST) $(FLAGS) -c -o $@ $< -I ~/.brew/include
 
 clean:
 	@rm -f $(OBJ)

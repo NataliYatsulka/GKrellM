@@ -1,8 +1,8 @@
 #ifndef DISPLAY_HPP
 # define DISPLAY_HPP
 
-# define H 80
-# define W 250
+# define Hi 80
+# define Wi 250
 
 # include <ncurses.h>
 # include <unistd.h>
@@ -29,11 +29,11 @@ public:
     void    make_frame(WINDOW *, int, int);
 
 private:
-    TimeModule	_module;
-    CpuModule   _cpu;
-    RawModule   _raw;
-    HostModule  _host;
-    OsModule    _os;
+    TimeModule	    _module;
+    CpuModule       _cpu;
+    RawModule       _raw;
+    HostModule      _host;
+    OsModule        _os;
 };
 
 #endif

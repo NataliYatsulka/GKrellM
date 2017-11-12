@@ -67,15 +67,15 @@ void    Display::max_win(int *maxheight, int *maxwidth)
 
     getmaxyx(stdscr, t_maxh, t_maxw);
 
-    if (t_maxh < H)
+    if (t_maxh < Hi)
         *maxheight = t_maxh;
     else
-        *maxheight = H;
+        *maxheight = Hi;
 
-    if (t_maxw < W)
+    if (t_maxw < Wi)
         *maxwidth = t_maxw;
     else
-        *maxwidth = W;
+        *maxwidth = Wi;
 }
 
 void    init_color(void)
@@ -101,7 +101,7 @@ void    Display::play() {
     int     c = 0;
 
     initscr();
-    WINDOW * win = newwin(H, W, 0, 0);
+    WINDOW * win = newwin(Hi, Wi, 0, 0);
     nodelay(stdscr, true);
     noecho();
     keypad(stdscr, true);
