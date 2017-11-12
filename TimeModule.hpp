@@ -12,7 +12,7 @@ public:
 	TimeModule();
 	~TimeModule();
 	TimeModule(TimeModule const & src);
-	TimeModule & operator=(TimeModule const & src);
+	TimeModule & operator=(TimeModule const &);
 
 	std::string	getTimeModule();
 };

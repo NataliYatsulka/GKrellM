@@ -7,7 +7,7 @@ TimeModule::~TimeModule() {}
 
 TimeModule::TimeModule(TimeModule const & src) { *this = src;}
 
-TimeModule & TimeModule::operator=(TimeModule const & src)
+TimeModule & TimeModule::operator=(TimeModule const &)
 {
 	return (*this);//->_time = src.getTimeModule());
 }
@@ -21,13 +21,6 @@ std::string TimeModule::getTimeModule()
 	time (&rawtime);
 	timeinfo = localtime (&rawtime);
 
-	strftime (buffer, 80, "Day time:  %e/%m/%Y  %I:%M:%S%p", timeinfo);
-	// puts (buffer);
-	return (std::string(buffer));//??
-	// time_t rawtime;
-	// struct tm * timeinfo;
-
-	// time (&rawtime);
-	// timeinfo = localtime (&rawtime);
-	// std::cout << "Current local time and date: " << asctime(timeinfo);// << std::endl;
+	strftime (buffer, 80, "Date/Time: %A %x %X %p", timeinfo);
+	return (std::string(buffer));
 }
