@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/rush_01.dir/TimeModule.cpp.o"
   "CMakeFiles/rush_01.dir/CpuModule.cpp.o"
   "CMakeFiles/rush_01.dir/RawModule.cpp.o"
+  "CMakeFiles/rush_01.dir/Display.cpp.o"
   "rush_01.pdb"
   "rush_01"
 )

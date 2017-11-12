@@ -88,6 +88,9 @@
 		<Unit filename="/Users/mkyianyt/rush_01/CpuModule.hpp">
 			<Option target="rush_01"/>
 		</Unit>
+		<Unit filename="/Users/mkyianyt/rush_01/Display.cpp">
+			<Option target="rush_01"/>
+		</Unit>
 		<Unit filename="/Users/mkyianyt/rush_01/IMonitorModule.cpp">
 			<Option target="rush_01"/>
 		</Unit>
@@ -95,6 +98,9 @@
 			<Option target="rush_01"/>
 		</Unit>
 		<Unit filename="/Users/mkyianyt/rush_01/RawModule.cpp">
+			<Option target="rush_01"/>
+		</Unit>
+		<Unit filename="/Users/mkyianyt/rush_01/RawModule.hpp">
 			<Option target="rush_01"/>
 		</Unit>
 		<Unit filename="/Users/mkyianyt/rush_01/TimeModule.cpp">

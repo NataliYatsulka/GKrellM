@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/mkyianyt/rush_01/CpuModule.cpp" "/Users/mkyianyt/rush_01/cmake-build-debug/CMakeFiles/rush_01.dir/CpuModule.cpp.o"
+  "/Users/mkyianyt/rush_01/Display.cpp" "/Users/mkyianyt/rush_01/cmake-build-debug/CMakeFiles/rush_01.dir/Display.cpp.o"
   "/Users/mkyianyt/rush_01/IMonitorModule.cpp" "/Users/mkyianyt/rush_01/cmake-build-debug/CMakeFiles/rush_01.dir/IMonitorModule.cpp.o"
   "/Users/mkyianyt/rush_01/RawModule.cpp" "/Users/mkyianyt/rush_01/cmake-build-debug/CMakeFiles/rush_01.dir/RawModule.cpp.o"
   "/Users/mkyianyt/rush_01/TimeModule.cpp" "/Users/mkyianyt/rush_01/cmake-build-debug/CMakeFiles/rush_01.dir/TimeModule.cpp.o"

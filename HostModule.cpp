@@ -18,7 +18,7 @@ std::string HostModule::getHostName()
 	char		buffer[64];
 	std::stringstream	result;
 
-	if(not (input = popen("whoami", "r")))
+	if(!(input = popen("whoami", "r")))
 		return ("Ups...I can't do this operation");
 	while(fgets(buffer, sizeof(buffer), input))
 		result << buffer;
@@ -32,7 +32,7 @@ std::string HostModule::getHostName2()
 	char		buffer[64];
 	std::stringstream	result;
 
-	if(not (input = popen("hostname", "r")))
+	if(!(input = popen("hostname", "r")))
 		return ("Ups...I can't do this operation");
 	while(fgets(buffer, sizeof(buffer), input))
 		result << buffer;

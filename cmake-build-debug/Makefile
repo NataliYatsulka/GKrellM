@@ -150,6 +150,33 @@ CpuModule.cpp.s:
 	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/CpuModule.cpp.s
 .PHONY : CpuModule.cpp.s
 
+Display.o: Display.cpp.o
+
+.PHONY : Display.o
+
+# target to build an object file
+Display.cpp.o:
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/Display.cpp.o
+.PHONY : Display.cpp.o
+
+Display.i: Display.cpp.i
+
+.PHONY : Display.i
+
+# target to preprocess a source file
+Display.cpp.i:
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/Display.cpp.i
+.PHONY : Display.cpp.i
+
+Display.s: Display.cpp.s
+
+.PHONY : Display.s
+
+# target to generate assembly for a file
+Display.cpp.s:
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/Display.cpp.s
+.PHONY : Display.cpp.s
+
 IMonitorModule.o: IMonitorModule.cpp.o
 
 .PHONY : IMonitorModule.o
@@ -270,6 +297,9 @@ help:
 	@echo "... CpuModule.o"
 	@echo "... CpuModule.i"
 	@echo "... CpuModule.s"
+	@echo "... Display.o"
+	@echo "... Display.i"
+	@echo "... Display.s"
 	@echo "... IMonitorModule.o"
 	@echo "... IMonitorModule.i"
 	@echo "... IMonitorModule.s"
