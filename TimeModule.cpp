@@ -14,7 +14,6 @@ TimeModule & TimeModule::operator=(TimeModule const &src)
 
 std::string TimeModule::getTimeModule()
 {
-//	(void)*this->_file;
 	time_t	rawtime;
 	struct	tm * timeinfo;
 
