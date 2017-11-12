@@ -12,6 +12,7 @@
 # include "CpuModule.hpp"
 # include "RawModule.hpp"
 # include "HostModule.hpp"
+# include "OsModule.hpp"
 
 class   Display : public IMonitorDisplay {
 
@@ -32,7 +33,7 @@ private:
     CpuModule   _cpu;
     RawModule   _raw;
     HostModule  _host;
-
+    OsModule    _os;
 };
 
 #endif

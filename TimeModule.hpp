@@ -1,12 +1,9 @@
-
 #ifndef TIMEMODULE_HPP
 # define TIMEMODULE_HPP
 
-# include <string>
-# include <iostream>
-# include <ctime>
+# include "Module.hpp"
 
-class   TimeModule// : public IMonitorModule
+class   TimeModule : public Module
 {
 public:
 	TimeModule();

@@ -1,7 +1,7 @@
 
 #include "HostModule.hpp"
 
-HostModule::HostModule() {}
+HostModule::HostModule() : Module() {}
 
 HostModule::~HostModule() {}
 
@@ -12,30 +12,26 @@ HostModule & HostModule::operator=(HostModule const &)
 	return (*this);
 }
 
-std::string HostModule::getHostName()
+std::string HostModule::getUserName()
 {
-	FILE		*input;
-	char		buffer[64];
-	std::stringstream	result;
+	std::stringstream	data;
 
-	if(!(input = popen("whoami", "r")))
+	if(!(this->_file = popen("whoami", "r")))
 		return ("Ups...I can't do this operation");
-	while(fgets(buffer, sizeof(buffer), input))
-		result << buffer;
-	pclose(input);
-	return result.str();
+	while(fgets(this->_buffer, sizeof(this->_buffer), this->_file))
+		data << this->_buffer;
+	pclose(this->_file);
+	return data.str();
 }
 
 std::string HostModule::getHostName2()
 {
-	FILE		*input;
-	char		buffer[64];
-	std::stringstream	result;
+	std::stringstream	data;
 
-	if(!(input = popen("hostname", "r")))
+	if(!(this->_file = popen("hostname", "r")))
 		return ("Ups...I can't do this operation");
-	while(fgets(buffer, sizeof(buffer), input))
-		result << buffer;
-	pclose(input);
-	return result.str();
+	while(fgets(this->_buffer, sizeof(this->_buffer), this->_file))
+		data << this->_buffer;
+	pclose(this->_file);
+	return data.str();
 }

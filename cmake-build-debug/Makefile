@@ -177,6 +177,60 @@ Display.cpp.s:
 	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/Display.cpp.s
 .PHONY : Display.cpp.s
 
+HostModule.o: HostModule.cpp.o
+
+.PHONY : HostModule.o
+
+# target to build an object file
+HostModule.cpp.o:
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/HostModule.cpp.o
+.PHONY : HostModule.cpp.o
+
+HostModule.i: HostModule.cpp.i
+
+.PHONY : HostModule.i
+
+# target to preprocess a source file
+HostModule.cpp.i:
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/HostModule.cpp.i
+.PHONY : HostModule.cpp.i
+
+HostModule.s: HostModule.cpp.s
+
+.PHONY : HostModule.s
+
+# target to generate assembly for a file
+HostModule.cpp.s:
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/HostModule.cpp.s
+.PHONY : HostModule.cpp.s
+
+IMonitorDisplay.o: IMonitorDisplay.cpp.o
+
+.PHONY : IMonitorDisplay.o
+
+# target to build an object file
+IMonitorDisplay.cpp.o:
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o
+.PHONY : IMonitorDisplay.cpp.o
+
+IMonitorDisplay.i: IMonitorDisplay.cpp.i
+
+.PHONY : IMonitorDisplay.i
+
+# target to preprocess a source file
+IMonitorDisplay.cpp.i:
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.i
+.PHONY : IMonitorDisplay.cpp.i
+
+IMonitorDisplay.s: IMonitorDisplay.cpp.s
+
+.PHONY : IMonitorDisplay.s
+
+# target to generate assembly for a file
+IMonitorDisplay.cpp.s:
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.s
+.PHONY : IMonitorDisplay.cpp.s
+
 IMonitorModule.o: IMonitorModule.cpp.o
 
 .PHONY : IMonitorModule.o
@@ -203,6 +257,60 @@ IMonitorModule.s: IMonitorModule.cpp.s
 IMonitorModule.cpp.s:
 	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/IMonitorModule.cpp.s
 .PHONY : IMonitorModule.cpp.s
+
+Module.o: Module.cpp.o
+
+.PHONY : Module.o
+
+# target to build an object file
+Module.cpp.o:
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/Module.cpp.o
+.PHONY : Module.cpp.o
+
+Module.i: Module.cpp.i
+
+.PHONY : Module.i
+
+# target to preprocess a source file
+Module.cpp.i:
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/Module.cpp.i
+.PHONY : Module.cpp.i
+
+Module.s: Module.cpp.s
+
+.PHONY : Module.s
+
+# target to generate assembly for a file
+Module.cpp.s:
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/Module.cpp.s
+.PHONY : Module.cpp.s
+
+OsModule.o: OsModule.cpp.o
+
+.PHONY : OsModule.o
+
+# target to build an object file
+OsModule.cpp.o:
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/OsModule.cpp.o
+.PHONY : OsModule.cpp.o
+
+OsModule.i: OsModule.cpp.i
+
+.PHONY : OsModule.i
+
+# target to preprocess a source file
+OsModule.cpp.i:
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/OsModule.cpp.i
+.PHONY : OsModule.cpp.i
+
+OsModule.s: OsModule.cpp.s
+
+.PHONY : OsModule.s
+
+# target to generate assembly for a file
+OsModule.cpp.s:
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/OsModule.cpp.s
+.PHONY : OsModule.cpp.s
 
 RawModule.o: RawModule.cpp.o
 
@@ -300,9 +408,21 @@ help:
 	@echo "... Display.o"
 	@echo "... Display.i"
 	@echo "... Display.s"
+	@echo "... HostModule.o"
+	@echo "... HostModule.i"
+	@echo "... HostModule.s"
+	@echo "... IMonitorDisplay.o"
+	@echo "... IMonitorDisplay.i"
+	@echo "... IMonitorDisplay.s"
 	@echo "... IMonitorModule.o"
 	@echo "... IMonitorModule.i"
 	@echo "... IMonitorModule.s"
+	@echo "... Module.o"
+	@echo "... Module.i"
+	@echo "... Module.s"
+	@echo "... OsModule.o"
+	@echo "... OsModule.i"
+	@echo "... OsModule.s"
 	@echo "... RawModule.o"
 	@echo "... RawModule.i"
 	@echo "... RawModule.s"

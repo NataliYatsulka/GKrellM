@@ -1,12 +1,9 @@
-
 #ifndef OSMODULE_HPP
 # define OSMODULE_HPP
 
-# include <string>
-# include <iostream>
-# include <sstream>
+#include "Module.hpp"
 
-class   OsModule// : public IMonitorModule
+class   OsModule : public Module
 {
 public:
 	OsModule();
@@ -17,7 +14,6 @@ public:
 	std::string getOsModuleKernel();
 	std::string getOsModuleSysVersion();
 	std::string getOsModuleBootVolume();
-
 };
 
 #endif

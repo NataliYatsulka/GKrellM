@@ -1,26 +1,26 @@
-
 #include "TimeModule.hpp"
 
-TimeModule::TimeModule() {}
+TimeModule::TimeModule() : Module() {}
 
 TimeModule::~TimeModule() {}
 
 TimeModule::TimeModule(TimeModule const & src) { *this = src;}
 
-TimeModule & TimeModule::operator=(TimeModule const &)
+TimeModule & TimeModule::operator=(TimeModule const &src)
 {
-	return (*this);//->_time = src.getTimeModule());
+	(void)src;
+	return (*this);
 }
 
 std::string TimeModule::getTimeModule()
 {
-	time_t rawtime;
-	struct tm * timeinfo;
-	char	buffer[80];
+//	(void)*this->_file;
+	time_t	rawtime;
+	struct	tm * timeinfo;
 
 	time (&rawtime);
 	timeinfo = localtime (&rawtime);
 
-	strftime (buffer, 80, "Date/Time: %A %x %X %p", timeinfo);
-	return (std::string(buffer));
+	strftime (this->_buffer, 80, "Date/Time: %A %x %X %p", timeinfo);
+	return (std::string(this->_buffer));
 }

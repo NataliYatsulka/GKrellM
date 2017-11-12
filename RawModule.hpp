@@ -1,10 +1,9 @@
 #ifndef RAWMODULE_HPP
 # define RAWMODULE_HPP
 
-# include <string>
-# include <sstream>
+# include "Module.hpp"
 
-class   RawModule {
+class   RawModule : public Module {
 
 public:
     RawModule();
@@ -12,8 +11,7 @@ public:
     RawModule & operator=(RawModule const &);
     ~RawModule();
 
-    std::string     getData();
-
+    std::string     getRaw();
 };
 
 #endif

@@ -103,7 +103,7 @@ void    Display::play() {
             wclear(win);
             mvwprintw(win, y/2, x/2 - 10, "Make the window bigger");
         } else {
-            mvwprintw(win, 3, 10, this->_cpu.getData().c_str());
+            mvwprintw(win, 3, 10, this->_cpu.getCpu().c_str());
             this->make_frame_option(win, 22, 60, 2, 2);
         }
         if (x < 122 || y < 5) {
@@ -117,18 +117,28 @@ void    Display::play() {
             wclear(win);
             mvwprintw(win, y/2, x/2 - 10, "Make the window bigger");
         } else {
-            mvwprintw(win, 8, 68, this->_raw.getData().c_str());
-            this->make_frame_option(win, 11, 120, 6, 62);
+            mvwprintw(win, 7, 68, this->_raw.getRaw().c_str());
+            this->make_frame_option(win, 9, 120, 6, 62);
         }
         if (x < 122 || y < 19) {
             wclear(win);
             mvwprintw(win, y/2, x/2 - 10, "Make the window bigger");
         } else {
-            mvwprintw(win, 14, 80, "USERNAME: ");
-            mvwprintw(win, 14, 90, this->_host.getHostName().c_str());
-            mvwprintw(win, 16, 76, "HOSTNAME: ");
-            mvwprintw(win, 16, 86, this->_host.getHostName2().c_str());
-            this->make_frame_option(win, 19, 120, 12, 62);
+            mvwprintw(win, 11, 80, "USERNAME: ");
+            mvwprintw(win, 11, 90, this->_host.getUserName().c_str());
+            mvwprintw(win, 13, 76, "HOSTNAME: ");
+            mvwprintw(win, 13, 86, this->_host.getHostName2().c_str());
+            this->make_frame_option(win, 15, 120, 10, 62);
+        }
+        if (x < 122 || y < 22) {
+            wclear(win);
+            mvwprintw(win, y/2, x/2 - 10, "Make the window bigger");
+        } else {
+            mvwprintw(win, 17, 68, "OS info: ");
+            mvwprintw(win, 18, 72, this->_os.getOsModuleKernel().c_str());
+            mvwprintw(win, 19, 72, this->_os.getOsModuleSysVersion().c_str());
+            mvwprintw(win, 20, 72, this->_os.getOsModuleBootVolume().c_str());
+            this->make_frame_option(win, 22, 120, 16, 62);
         }
         if (x < 26 || y < 5)
         {

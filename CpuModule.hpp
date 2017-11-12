@@ -1,10 +1,9 @@
 #ifndef CPUMODULE_HPP
 # define CPUMODULE_HPP
 
-# include <string>
-# include <sstream>
+# include "Module.hpp"
 
-class   CpuModule {
+class   CpuModule : public Module {
 
 public:
     CpuModule();
@@ -12,7 +11,7 @@ public:
     CpuModule & operator=(CpuModule const &);
     ~CpuModule();
 
-    std::string     getData();
+    std::string     getCpu();
 
 };
 

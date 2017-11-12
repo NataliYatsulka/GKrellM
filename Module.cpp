@@ -1,16 +1,14 @@
 #include "Module.hpp"
 
-Module::Module(std::string name) : _name(name) {}
+Module::Module() {}
 
-Module::Module(Module const &rhs, std::string name) : _name(name) {
-    *this = rhs;
+Module::Module(Module const &src) {
+    *this = src;
 }
 
-Module &    Module::operator=(Module const &rhs) {
-    (void)rhs;
+Module &    Module::operator=(Module const &src) {
+    (void)src;
     return *this;
 }
 
-std::string     Module::getName() {
-    return this->_name;
-}
+Module::~Module() {}

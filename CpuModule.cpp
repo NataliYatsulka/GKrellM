@@ -1,6 +1,6 @@
 #include "CpuModule.hpp"
 
-CpuModule::CpuModule() {}
+CpuModule::CpuModule() : Module() {}
 
 CpuModule::CpuModule(CpuModule const &src) {
     *this = src;
@@ -13,15 +13,13 @@ CpuModule & CpuModule::operator=(CpuModule const &src) {
 
 CpuModule::~CpuModule() {}
 
-std::string     CpuModule::getData() {
-    FILE 				*file;
-    char				buffer[80];
-    std::stringstream	result;
+std::string     CpuModule::getCpu() {
+    std::stringstream	data;
 
-    if(!(file = popen("system_profiler SPHardwareDataType", "r")))
+    if(!(this->_file = popen("system_profiler SPHardwareDataType", "r")))
         return "Something wrong!";
-    while(fgets(buffer, sizeof(buffer), file))
-        result << buffer;
-    pclose(file);
-    return result.str();
+    while(fgets(this->_buffer, sizeof(this->_buffer), this->_file))
+        data << this->_buffer;
+    pclose(this->_file);
+    return data.str();
 }

@@ -1,12 +1,9 @@
-
 #ifndef HOSTMODULE_HPP
 # define HOSTMODULE_HPP
 
-# include <string>
-# include <iostream>
-# include <sstream>
+# include "Module.hpp"
 
-class   HostModule// : public IMonitorModule
+class   HostModule : public Module
 {
 public:
 	HostModule();
@@ -14,9 +11,8 @@ public:
 	HostModule(HostModule const & src);
 	HostModule & operator=(HostModule const &);
 
-	std::string getHostName();
+	std::string getUserName();
 	std::string getHostName2();
-
 };
 
 #endif

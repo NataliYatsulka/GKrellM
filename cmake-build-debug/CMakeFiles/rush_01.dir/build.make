@@ -201,6 +201,102 @@ CMakeFiles/rush_01.dir/Display.cpp.o.provides: CMakeFiles/rush_01.dir/Display.cp
 CMakeFiles/rush_01.dir/Display.cpp.o.provides.build: CMakeFiles/rush_01.dir/Display.cpp.o
 
 
+CMakeFiles/rush_01.dir/OsModule.cpp.o: CMakeFiles/rush_01.dir/flags.make
+CMakeFiles/rush_01.dir/OsModule.cpp.o: ../OsModule.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mkyianyt/rush_01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/rush_01.dir/OsModule.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rush_01.dir/OsModule.cpp.o -c /Users/mkyianyt/rush_01/OsModule.cpp
+
+CMakeFiles/rush_01.dir/OsModule.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rush_01.dir/OsModule.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mkyianyt/rush_01/OsModule.cpp > CMakeFiles/rush_01.dir/OsModule.cpp.i
+
+CMakeFiles/rush_01.dir/OsModule.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rush_01.dir/OsModule.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mkyianyt/rush_01/OsModule.cpp -o CMakeFiles/rush_01.dir/OsModule.cpp.s
+
+CMakeFiles/rush_01.dir/OsModule.cpp.o.requires:
+
+.PHONY : CMakeFiles/rush_01.dir/OsModule.cpp.o.requires
+
+CMakeFiles/rush_01.dir/OsModule.cpp.o.provides: CMakeFiles/rush_01.dir/OsModule.cpp.o.requires
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/OsModule.cpp.o.provides.build
+.PHONY : CMakeFiles/rush_01.dir/OsModule.cpp.o.provides
+
+CMakeFiles/rush_01.dir/OsModule.cpp.o.provides.build: CMakeFiles/rush_01.dir/OsModule.cpp.o
+
+
+CMakeFiles/rush_01.dir/HostModule.cpp.o: CMakeFiles/rush_01.dir/flags.make
+CMakeFiles/rush_01.dir/HostModule.cpp.o: ../HostModule.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mkyianyt/rush_01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/rush_01.dir/HostModule.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rush_01.dir/HostModule.cpp.o -c /Users/mkyianyt/rush_01/HostModule.cpp
+
+CMakeFiles/rush_01.dir/HostModule.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rush_01.dir/HostModule.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mkyianyt/rush_01/HostModule.cpp > CMakeFiles/rush_01.dir/HostModule.cpp.i
+
+CMakeFiles/rush_01.dir/HostModule.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rush_01.dir/HostModule.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mkyianyt/rush_01/HostModule.cpp -o CMakeFiles/rush_01.dir/HostModule.cpp.s
+
+CMakeFiles/rush_01.dir/HostModule.cpp.o.requires:
+
+.PHONY : CMakeFiles/rush_01.dir/HostModule.cpp.o.requires
+
+CMakeFiles/rush_01.dir/HostModule.cpp.o.provides: CMakeFiles/rush_01.dir/HostModule.cpp.o.requires
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/HostModule.cpp.o.provides.build
+.PHONY : CMakeFiles/rush_01.dir/HostModule.cpp.o.provides
+
+CMakeFiles/rush_01.dir/HostModule.cpp.o.provides.build: CMakeFiles/rush_01.dir/HostModule.cpp.o
+
+
+CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o: CMakeFiles/rush_01.dir/flags.make
+CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o: ../IMonitorDisplay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mkyianyt/rush_01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o -c /Users/mkyianyt/rush_01/IMonitorDisplay.cpp
+
+CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mkyianyt/rush_01/IMonitorDisplay.cpp > CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.i
+
+CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mkyianyt/rush_01/IMonitorDisplay.cpp -o CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.s
+
+CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o.requires:
+
+.PHONY : CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o.requires
+
+CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o.provides: CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o.requires
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o.provides.build
+.PHONY : CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o.provides
+
+CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o.provides.build: CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o
+
+
+CMakeFiles/rush_01.dir/Module.cpp.o: CMakeFiles/rush_01.dir/flags.make
+CMakeFiles/rush_01.dir/Module.cpp.o: ../Module.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mkyianyt/rush_01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/rush_01.dir/Module.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rush_01.dir/Module.cpp.o -c /Users/mkyianyt/rush_01/Module.cpp
+
+CMakeFiles/rush_01.dir/Module.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rush_01.dir/Module.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mkyianyt/rush_01/Module.cpp > CMakeFiles/rush_01.dir/Module.cpp.i
+
+CMakeFiles/rush_01.dir/Module.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rush_01.dir/Module.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mkyianyt/rush_01/Module.cpp -o CMakeFiles/rush_01.dir/Module.cpp.s
+
+CMakeFiles/rush_01.dir/Module.cpp.o.requires:
+
+.PHONY : CMakeFiles/rush_01.dir/Module.cpp.o.requires
+
+CMakeFiles/rush_01.dir/Module.cpp.o.provides: CMakeFiles/rush_01.dir/Module.cpp.o.requires
+	$(MAKE) -f CMakeFiles/rush_01.dir/build.make CMakeFiles/rush_01.dir/Module.cpp.o.provides.build
+.PHONY : CMakeFiles/rush_01.dir/Module.cpp.o.provides
+
+CMakeFiles/rush_01.dir/Module.cpp.o.provides.build: CMakeFiles/rush_01.dir/Module.cpp.o
+
+
 # Object files for target rush_01
 rush_01_OBJECTS = \
 "CMakeFiles/rush_01.dir/main.cpp.o" \
@@ -208,7 +304,11 @@ rush_01_OBJECTS = \
 "CMakeFiles/rush_01.dir/TimeModule.cpp.o" \
 "CMakeFiles/rush_01.dir/CpuModule.cpp.o" \
 "CMakeFiles/rush_01.dir/RawModule.cpp.o" \
-"CMakeFiles/rush_01.dir/Display.cpp.o"
+"CMakeFiles/rush_01.dir/Display.cpp.o" \
+"CMakeFiles/rush_01.dir/OsModule.cpp.o" \
+"CMakeFiles/rush_01.dir/HostModule.cpp.o" \
+"CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o" \
+"CMakeFiles/rush_01.dir/Module.cpp.o"
 
 # External object files for target rush_01
 rush_01_EXTERNAL_OBJECTS =
@@ -219,9 +319,13 @@ rush_01: CMakeFiles/rush_01.dir/TimeModule.cpp.o
 rush_01: CMakeFiles/rush_01.dir/CpuModule.cpp.o
 rush_01: CMakeFiles/rush_01.dir/RawModule.cpp.o
 rush_01: CMakeFiles/rush_01.dir/Display.cpp.o
+rush_01: CMakeFiles/rush_01.dir/OsModule.cpp.o
+rush_01: CMakeFiles/rush_01.dir/HostModule.cpp.o
+rush_01: CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o
+rush_01: CMakeFiles/rush_01.dir/Module.cpp.o
 rush_01: CMakeFiles/rush_01.dir/build.make
 rush_01: CMakeFiles/rush_01.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mkyianyt/rush_01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable rush_01"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mkyianyt/rush_01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable rush_01"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rush_01.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -235,6 +339,10 @@ CMakeFiles/rush_01.dir/requires: CMakeFiles/rush_01.dir/TimeModule.cpp.o.require
 CMakeFiles/rush_01.dir/requires: CMakeFiles/rush_01.dir/CpuModule.cpp.o.requires
 CMakeFiles/rush_01.dir/requires: CMakeFiles/rush_01.dir/RawModule.cpp.o.requires
 CMakeFiles/rush_01.dir/requires: CMakeFiles/rush_01.dir/Display.cpp.o.requires
+CMakeFiles/rush_01.dir/requires: CMakeFiles/rush_01.dir/OsModule.cpp.o.requires
+CMakeFiles/rush_01.dir/requires: CMakeFiles/rush_01.dir/HostModule.cpp.o.requires
+CMakeFiles/rush_01.dir/requires: CMakeFiles/rush_01.dir/IMonitorDisplay.cpp.o.requires
+CMakeFiles/rush_01.dir/requires: CMakeFiles/rush_01.dir/Module.cpp.o.requires
 
 .PHONY : CMakeFiles/rush_01.dir/requires
 

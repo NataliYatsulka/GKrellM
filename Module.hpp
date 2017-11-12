@@ -3,18 +3,21 @@
 
 # include "IMonitorModule.hpp"
 
+# include <string>
+# include <sstream>
+
 class   Module : public IMonitorModule{
 
 public:
-    Module(std::string);
-    Module(Module const &, std::string);
+    Module();
+    Module(Module const &);
     Module &  operator=(Module const &);
     virtual ~Module();
 
-    std::string     getName();
 
-private:
-    std::string     _name;
+protected:
+    FILE 				*_file;
+    char				_buffer[80];
 
 };
 

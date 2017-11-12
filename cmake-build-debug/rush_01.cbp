@@ -91,10 +91,37 @@
 		<Unit filename="/Users/mkyianyt/rush_01/Display.cpp">
 			<Option target="rush_01"/>
 		</Unit>
+		<Unit filename="/Users/mkyianyt/rush_01/Display.hpp">
+			<Option target="rush_01"/>
+		</Unit>
+		<Unit filename="/Users/mkyianyt/rush_01/HostModule.cpp">
+			<Option target="rush_01"/>
+		</Unit>
+		<Unit filename="/Users/mkyianyt/rush_01/HostModule.hpp">
+			<Option target="rush_01"/>
+		</Unit>
+		<Unit filename="/Users/mkyianyt/rush_01/IMonitorDisplay.cpp">
+			<Option target="rush_01"/>
+		</Unit>
+		<Unit filename="/Users/mkyianyt/rush_01/IMonitorDisplay.hpp">
+			<Option target="rush_01"/>
+		</Unit>
 		<Unit filename="/Users/mkyianyt/rush_01/IMonitorModule.cpp">
 			<Option target="rush_01"/>
 		</Unit>
 		<Unit filename="/Users/mkyianyt/rush_01/IMonitorModule.hpp">
+			<Option target="rush_01"/>
+		</Unit>
+		<Unit filename="/Users/mkyianyt/rush_01/Module.cpp">
+			<Option target="rush_01"/>
+		</Unit>
+		<Unit filename="/Users/mkyianyt/rush_01/Module.hpp">
+			<Option target="rush_01"/>
+		</Unit>
+		<Unit filename="/Users/mkyianyt/rush_01/OsModule.cpp">
+			<Option target="rush_01"/>
+		</Unit>
+		<Unit filename="/Users/mkyianyt/rush_01/OsModule.hpp">
 			<Option target="rush_01"/>
 		</Unit>
 		<Unit filename="/Users/mkyianyt/rush_01/RawModule.cpp">

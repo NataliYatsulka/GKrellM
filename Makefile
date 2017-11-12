@@ -1,4 +1,3 @@
-
 CC = clang++
 
 FAST = -Ofast
@@ -7,7 +6,7 @@ FLAGS = -Wall -Wextra -Werror
 
 NAME = ft_gkrellm
 
-SRC = 
+SRC = CpuModule.cpp Display.cpp HostModule.cpp IMonitorModule.cpp IMonitorDisplay.cpp Module.cpp OsModule.cpp RawModule.cpp TimeModule.cpp main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

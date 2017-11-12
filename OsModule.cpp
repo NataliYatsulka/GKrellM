@@ -1,7 +1,6 @@
-
 #include "OsModule.hpp"
 
-OsModule::OsModule() {}
+OsModule::OsModule() : Module(){}
 
 OsModule::~OsModule() {}
 
@@ -14,42 +13,36 @@ OsModule & OsModule::operator=(OsModule const &)
 
 std::string OsModule::getOsModuleKernel()
 {
-	FILE 				*file;
-	char				buffer[80];
-	std::stringstream	result;
+	std::stringstream	data;
 
-	if(!(file = popen("system_profiler SPSoftwareDataType | grep Kernel", "r")))
+	if(!(this->_file = popen("system_profiler SPSoftwareDataType | grep Kernel", "r")))
 		return "Ups...";
-	while(fgets(buffer, sizeof(buffer), file))
-		result << buffer;
-	pclose(file);
-	return result.str();
+	while(fgets(this->_buffer, sizeof(this->_buffer), this->_file))
+        data << this->_buffer;
+	pclose(this->_file);
+	return data.str();
 }
 
 std::string OsModule::getOsModuleSysVersion()
 {
-	FILE 				*file;
-	char				buffer[80];
-	std::stringstream	result;
+	std::stringstream	data;
 
-	if(!(file = popen("system_profiler SPSoftwareDataType | grep "System Version"", "r")))
+	if(!(this->_file = popen("system_profiler SPSoftwareDataType | grep \"System Version\"", "r")))
 		return "Ups...";
-	while(fgets(buffer, sizeof(buffer), file))
-		result << buffer;
-	pclose(file);
-	return result.str();
+	while(fgets(this->_buffer, sizeof(this->_buffer), this->_file))
+        data << this->_buffer;
+	pclose(this->_file);
+	return data.str();
 }
 
 std::string OsModule::getOsModuleBootVolume()
 {
-	FILE 				*file;
-	char				buffer[80];
-	std::stringstream	result;
+	std::stringstream	data;
 
-	if(!(file = popen("system_profiler SPSoftwareDataType | grep "Boot Volume:"", "r")))
+	if(!(this->_file = popen("system_profiler SPSoftwareDataType | grep \"Boot Volume:\"", "r")))
 		return "Ups...";
-	while(fgets(buffer, sizeof(buffer), file))
-		result << buffer;
-	pclose(file);
-	return result.str();
+	while(fgets(this->_buffer, sizeof(this->_buffer), this->_file))
+        data << this->_buffer;
+	pclose(this->_file);
+	return data.str();
 }
