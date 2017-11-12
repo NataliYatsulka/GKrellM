@@ -1,4 +1,4 @@
-
+#include "TimeModule.hpp"
 #include <iostream>
 #include <unistd.h>
 #include <ncurses.h>
@@ -66,6 +66,7 @@ int     main()
     int     maxwidth;
     int     c = 0;
 
+	TimeModule	module;
     initscr();
     WINDOW * win = newwin(H, W, 0, 0);
     nodelay(stdscr, true);
@@ -80,6 +81,7 @@ int     main()
 
         make_clean_win(win, maxheight, maxwidth, ' ');
 
+		mvwprintw(win, 10, 10, module.getTimeModule().c_str());
 
         usleep(10000);
         refresh();

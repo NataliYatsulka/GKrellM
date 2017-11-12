@@ -8,13 +8,13 @@
 
 class   TimeModule// : public IMonitorModule
 {
-
+public:
 	TimeModule();
 	~TimeModule();
 	TimeModule(TimeModule const & src);
 	TimeModule & operator=(TimeModule const & src);
 
-	std::string getTimeModule();
+	std::string	getTimeModule();
 };
 
 #endif
